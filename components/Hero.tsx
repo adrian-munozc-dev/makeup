@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="flex justify-center mb-6">
-            <Sparkles className="text-pastel-purple" size={48} />
+            
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">Realza tu belleza natural</h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
