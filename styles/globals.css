@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+:root {
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(10, 10, 10);
+  --card: rgb(255, 255, 255);
+  --card-foreground: rgb(10, 10, 10);
+  --popover: rgb(255, 255, 255);
+  --popover-foreground: rgb(10, 10, 10);
+  --primary: rgb(23, 23, 23);
+  --primary-foreground: rgb(250, 250, 250);
+  --secondary: rgb(245, 245, 245);
+  --secondary-foreground: rgb(23, 23, 23);
+  --muted: rgb(245, 245, 245);
+  --muted-foreground: rgb(115, 115, 115);
+  --accent: rgb(245, 245, 245);
+  --accent-foreground: rgb(23, 23, 23);
+  --destructive: rgb(222, 45, 57);
+  --destructive-foreground: rgb(250, 250, 250);
+  --border: rgb(229, 229, 229);
+  --input: rgb(229, 229, 229);
+  --ring: rgb(10, 10, 10);
+  --chart-1: rgb(255, 102, 61);
+  --chart-2: rgb(46, 162, 102);
+  --chart-3: rgb(39, 65, 79);
+  --chart-4: rgb(246, 200, 103);
+  --chart-5: rgb(255, 179, 84);
+  --radius: 0.5rem;
+  --sidebar-background: rgb(250, 250, 250);
+  --sidebar-foreground: rgb(64, 64, 64);
+  --sidebar-primary: rgb(26, 26, 26);
+  --sidebar-primary-foreground: rgb(250, 250, 250);
+  --sidebar-accent: rgb(245, 245, 245);
+  --sidebar-accent-foreground: rgb(26, 26, 26);
+  --sidebar-border: rgb(225, 225, 225);
+  --sidebar-ring: rgb(37, 99, 235);
+}
+
+.dark {
+  --background: rgb(10, 10, 10);
+  --foreground: rgb(250, 250, 250);
+  --card: rgb(10, 10, 10);
+  --card-foreground: rgb(250, 250, 250);
+  --popover: rgb(10, 10, 10);
+  --popover-foreground: rgb(250, 250, 250);
+  --primary: rgb(250, 250, 250);
+  --primary-foreground: rgb(23, 23, 23);
+  --secondary: rgb(38, 38, 38);
+  --secondary-foreground: rgb(250, 250, 250);
+  --muted: rgb(38, 38, 38);
+  --muted-foreground: rgb(163, 163, 163);
+  --accent: rgb(38, 38, 38);
+  --accent-foreground: rgb(250, 250, 250);
+  --destructive: rgb(107, 39, 39);
+  --destructive-foreground: rgb(250, 250, 250);
+  --border: rgb(38, 38, 38);
+  --input: rgb(38, 38, 38);
+  --ring: rgb(212, 212, 212);
+  --chart-1: rgb(51, 102, 255);
+  --chart-2: rgb(46, 184, 138);
+  --chart-3: rgb(255, 179, 102);
+  --chart-4: rgb(178, 102, 255);
+  --chart-5: rgb(255, 85, 153);
+  --sidebar-background: rgb(26, 26, 26);
+  --sidebar-foreground: rgb(245, 245, 245);
+  --sidebar-primary: rgb(37, 99, 235);
+  --sidebar-primary-foreground: rgb(255, 255, 255);
+  --sidebar-accent: rgb(41, 41, 41);
+  --sidebar-accent-foreground: rgb(245, 245, 245);
+  --sidebar-border: rgb(41, 41, 41);
+  --sidebar-ring: rgb(37, 99, 235);
+}
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
